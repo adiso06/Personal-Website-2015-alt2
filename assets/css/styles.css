@@ -1,191 +1,599 @@
-/* CSS Styles */
-@charset "utf-8";
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
 
-body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: 'Lato', 'Helvetica Neue', Verdana, Geneva, sans-serif; }
-
-header { background: url(../img/intro-bg.jpg) no-repeat center center; position: relative; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
-header strong { font-weight: 900; display: block; color: #646464; font-family: 'Lato', 'Helvetica Neue', sans-serif; font-size: 120px; padding-top: 65px; }
-header strong span { color: #eb4450; font-weight: 900; font-size: 86px; position: relative; top: -50px; margin-right: 5px; }
-header p { color: #646464; font-size: 40px; margin-bottom: 1.5em; margin-top: 0.3em; }
-header p.darker { color: #3f3f3f; margin-bottom: 2.3em; }
-header p a { color: #525252; }
-header p a:hover,
-header p a:focus { color: #444; }
-header div.me { padding-top: 30px; height: 100%; right: 0; }
-header div.me img { max-width: 100%; height: auto; }
-
-header p,
-header p.darker,
-h2 {
-	font-family: 'Lato', 'Helvetica Neue', sans-serif;
-	font-weight: 900;
-}
-h2 { padding: 1em 0 .8em 0; font-size: 42px; text-align: center; text-transform: uppercase; }
-h2:after { content: ' '; display: block; width: 60px; margin: 0 auto; padding-top: 20px; border-bottom: 3px solid rgba(0,0,0, 0.3); }
-div.centered { float: none; margin: 0 auto; }
-section { padding: 2em 0 5em 0; }
-p.left { text-align: left; }
-p.right { text-align: right; }
-
-main { padding: 3.2em 0; background-color: #eb4450; }
-main h1 { text-align: center; line-height: 1.385; color: #FFF; font-size: 40px; font-weight: 400; }
-
-#skills h3 { font-size: 40px; font-weight: normal; }
-#skills h3:after { content: ' '; display: block; width: 60px; padding-top: 20px; border-bottom: 3px solid rgba(0,0,0, 0.3) }
-#skills ul { list-style: none; padding-left: 0; width: 100%; }
-#skills ul.skills { padding-top: 0px; margin-top: 0; }
-#skills ul.skills li { line-height: 50px; }
-#skills ul.skills li strong { font-size: 22px; font-weight: 300; }
-#skills ul.skills li span { display: block; line-height: 14px; color: #a1a1a1; font-size: 14px; font-weight: bold; }
-#skills h4 { font-size: 36px; margin-top: 0; margin-bottom: 0; padding-bottom: 10px; color: #494949; font-weight: normal; }
-#skills ul.iCan li { padding-left: 40px; margin-bottom: 22px; line-height: 1.5em; color: #737373; font-size: 18px; }
-#skills ul.iCan li:before { content: '\f00c'; color: #838383; font-family: FontAwesome; display: inline-block; width: 40px; margin-left: -40px; }
-#skills ul.iCan li strong {  }
-#skills p { color: #737373; font-size: 18px; padding-top: 10px; padding-left: 40px; }
-#skills a.btn { float: right; display: inline-block; border-radius: 4px; background-color: #f5f5f5; padding: 0.5em 1em 0.6em 1em; color: #646464; -moz-transition: all 0.2s ease; -webkit-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; }
-#skills a.btn:hover { text-decoration: none; }
-#skills a.btn.dribbble:hover { background-color: #EA4C89; color: #FFF; }
-#skills a.btn.github:hover { background-color: #555; color: #FFF; }
-#skills a.btn i { font-size: 42px; float: left; display: block; padding-top: 5px; }
-#skills a.btn span { font-size: 12px; margin-left: 50px; text-align: left; padding-top: 5px; display: block; text-transform: uppercase; line-height: 12px; }
-#skills a.btn strong { font-size: 28px; margin-left: 50px; display: block; line-height: 36px; }
-#skills div.counter p { text-align: center; font-size: 16px; color: #737373; padding: 3em 0 0em 0; }
-#skills div.curly { line-height: 100%; font-family: 'Lato', sans-serif; color: #737373; font-weight: 100; font-size: 200px; vertical-align: middle !important; }
-
-#bring { background: #2980b9; }
-#bring h2 { color: #FFF; }
-#bring ul { padding-left: 0; list-style: none; }
-#bring ul li { padding-left: 40px; margin-bottom: 22px; line-height: 1.5em; color: #e9eff4; font-size: 20px; }
-#bring ul li:before { content: '\f00c'; color: #e9eff4; font-family: FontAwesome; display: inline-block; width: 40px; margin-left: -40px; }
-
-#recommendations ul { list-style: none; padding-left: 0; }
-#recommendations ul li { display: block; margin-bottom: 30px; }
-#recommendations ul li img { float: left; padding-top: 10px; }
-#recommendations ul li cite { display: block; margin-left: 160px; margin-bottom: 10px; color: #5b5b5b; font-style: normal; font-size: 18px; }
-#recommendations ul li strong {  }
-#recommendations ul li q { display: block; margin-left: 160px; border-left: none; font-size: 18px; color: #5b5b5b; line-height: 30px; }  
-
-#cv { background: #6b9f7d; }
-#cv h2 { color: #FFF; margin-bottom: 1em; }
-#cv a.btn { display: block; margin: 0 auto; text-align: center; white-space: normal; font-size: 18px; padding: 1.7em 0 1.8em 0; font-weight: 500; background: #eff7f3; color: #345c45; border-radius: 5px; text-transform: uppercase; }
-#cv a.btn:hover { background: #FFF; }
-#cv span { display: block; margin-bottom: 3em; text-align: center; color: #99d0ac; font-size: 12px; padding-top: .8em; }
-
-#projects h3 { font-size: 30px; text-align: center; padding-bottom: 20px; font-weight: 700; }
-
-#awards { background: #1abc9c; }
-#awards h2 { color: #FFF; padding-bottom: 1em; }
-#awards div { text-align: center; }
-#awards div img { }
-#awards div h3 { color: #555; margin-bottom: 0; font-size: 14px; font-weight: normal; }
-#awards div h3 strong { font-weight: bold; }
-#awards div span { font-size: 12px; color: #555; }
-#awards div .dark .tooltip-content { color: #FFF; font-size: 18px; }
-
-#hobby { text-align: center; }
-#hobby img { max-width: 100%; height: auto; }
-#hobby h3 { font-size: 16px; color: #6b6b6b; text-transform: uppercase; font-weight: bold; }
-#hobby p { font-size: 14px; color: #ababab; text-align: center; margin-top: 2em; }
-
-#why { background-color: #EB7F00; }
-#why h2 { color: #FFF; }
-#why p { font-size: 24px; line-height: 42px; color: #FFF; }
-#why ul { list-style: none; padding-left: 0; }
-#why ul li { margin-top: 40px;  }
-#why ul li a.rank { display: block; -ms-transform: rotate(10deg); -webkit-transform: rotate(10deg); transform: rotate(10deg); font-size: 11px; margin-top: 10px; font-weight: bold; text-decoration: none; text-align: center; color: #555; background-color: #ebe9e8; width: 80px; padding-top: 25px; padding-bottom: 25px; border-radius: 50%; -moz-transition: all 0.2s ease; -webkit-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; }
-#why ul li a.rank:hover { text-decoration: none; -ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg); background-color: #FFF }
-#why ul li span { color: #FFF; font-size: 18px; }
-#why ul li strong { color: #FFF; font-weight: normal; font-size: 12px; }
-#why ul li h3 { margin-top: 0; margin-bottom: 0; color: #FFF; line-height: 1.3; font-size: 24px; font-weight: normal; }
-#why ul li h3 strong { margin-top: 0; font-size: 24px; color: #FFF; line-height: 1.3; font-weight: bold; }
-#why ul li h4 { color: #F4F4F4; margin-top: 0.5em; margin-bottom: 0; font-weight: bold; font-size: 16px; }
-#why ul li ul { margin-top: 20px; }
-#why ul li ul li { margin-top: 0; line-height: 1.8; color: #f7f3ed; }
-#why ul li img { padding-top: 20px; }
-#why ul li a { opacity: 0.9; -moz-transition: all 0.2s ease; -webkit-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; }
-#why ul li a:hover { opacity: 1; text-decoration: none; } 
-
-#cta { padding: 0; min-height: 950px; }
-#cta #large { position: relative; width: 100%; min-height: 950px; background: #333; overflow: hidden; background-size: cover; background-position: center center; z-index: 1;}
-#cta canvas { min-height: 950px; }
-#cta .container { text-align: center; position: absolute; margin: 0; padding: 0; top: 50%; left: 50%; z-index: 999; -webkit-transform: translate3d(-50%,-50%,0); transform: translate3d(-50%,-50%,0); }
-#cta .animated-bg #large { background-image: url('../img/cta-bg.jpg'); }
-#cta ul.social { list-style: none; width: 430px; margin-left: auto; margin-right: auto; padding-left: 0; padding-top: 100px; background: url(../img/social.png) center center no-repeat; }
-#cta ul.social li { float: left; margin-left: 30px; border-radius: 50%; border: 2px solid #FFF; }
-#cta ul.social li:first-child { float: left; margin-left: 0; }
-#cta ul.social li a { cursor: pointer; display: block; padding: 15px; }
-#cta ul.social li i { color: #FFF; width: 1em; }
-#cta ul.social li,
-#cta ul.social li a,
-#cta ul.social li i,
-#cta a.btn { -moz-transition: all 0.2s ease; -webkit-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; }
-#cta ul.social li:hover { float: left; border-radius: 50%; border: 2px dashed #FFF; }
-#cta ul.social li a:hover { cursor: pointer; display: block; padding: 15px; }
-#cta ul.social li i:hover { color: #FFF; width: 1em; }
-#cta h3 { clear: both; color: #FFF; padding-top: 40px; font-size: 36px; font-weight: normal; line-height: 1.5; }
-#cta a.btn { border-radius: 4px; display: block; margin-top: 20px; background-color: #27ae60; text-align: center; cursor: pointer; }
-#cta a.btn:hover,
-#cta a.btn:focus { text-decoration: none; background-color: #29b564; }
-#cta a.btn span { display: inline-block; padding: 0.7em 10% 0.7em 10%;  border-bottom: 1px solid #21a257; font-size: 12px; font-weight: bold; text-transform: uppercase; color: #def0e6; }
-#cta a.btn:hover span { color: #FFF; }
-#cta a.btn strong { display: inline-block; color: #F4F4F4; font-size: 24px; padding: 0.7em 10% 0.8em 10%; font-weight: bold; }
-#cta a.btn:hover strong { color: #FFF; }
-#cta p { text-transform: uppercase; font-size: 14px; color: #939393; padding-top: 50px; }
-#cta p strong { text-transform: uppercase; font-size: 14px; color: #bebebe; }
-#cta .fb-like,
-#cta .twitter-share-button { float: right; }
-
-#subscribe { background-color: #272727; }
-#subscribe h2 { color: #868686; margin-bottom: 0; padding-bottom: 0.2em; }
-#subscribe h2:after { content: none; padding-top: 0; }
-#subscribe h3 { color: #F4F4F4; margin-top: 0; font-weight: normal; text-align: center; font-size: 24px; text-transform: uppercase; }
-#subscribe form { display: block; width: 80%; margin: 0 auto; padding-top: 30px; padding-bottom: 30px; }
-#subscribe form label { display: block; color: #929292; font-size: 14px; }
-#subscribe form input[type=email] { width: 100%; display: block; border:0; font-size: 18px; height: 55px; background-color: #d2d2d2; padding: 0.5em 1em 0.4em 1em; }
-#subscribe form input[type=email]:focus { background-color: #F4F4F4; }
-#subscribe form input[type=submit] { width: 100%; display: block; color: #ededed; border:0; background: #0c0c0c; height: 55px; font-size: 18px; padding: 0.5em 1em 0.4em 1em; }
-#subscribe form input[type=submit]:hover { color: #FFF; }
-#subscribe form small { display: block; padding-top: 5px; font-size: 12px; color: #929292; }
-#subscribe form strong { font-weight: bold; }
-#subscribe #mce-responses { color: #FFF; }
-
-@media (min-width : 768px) { 
-	div.me img { position: absolute; bottom: 0; right: 0; }
-	div.row.meRow { position: relative }
-	header div.me { position: absolute }
-}
-
-/* Mobile devices */
-@media (max-width : 768px) {
-	#awards div { min-height: 200px; }
-	header { text-align: center; }
-
-	#recommendations ul { list-style: none; padding-left: 20px; padding-right: 20px; }
-	#recommendations ul li { display: block; margin-bottom: 30px; border-bottom: 1px solid #d7d7d7; padding-bottom: 20px; }
-	#recommendations ul li:last-child { border-bottom: 0; }
-	#recommendations ul li img { float: none; display: block; margin: 0 auto; padding-bottom: 10px; }
-	#recommendations ul li cite { display: block; margin-left: 0px; margin-bottom: 10px; color: #5b5b5b; font-style: normal; font-size: 18px; }
-	#recommendations ul li q { display: block; margin-left: 0px; border-left: none; font-size: 16px; color: #5b5b5b; line-height: 30px; }  
+	<!-- Hello stranger... Yep! I write clean code, enjoy it! :) -->
 	
-	#cta {}
-	#cta ul.social { list-style: none; margin-left: auto; margin-right: auto; padding-left: 0; padding-top: 50px; background: none; }
-	#cta ul.social li { float: left; display: inline-block; width: 65px; border-radius: 50%; margin-left: 1em; border: 2px solid #FFF; }
-	#cta ul.social li:first-child { margin-left: 1.5em; }
-	#cta ul.social li a { cursor: pointer; display: block; padding: 15px; }
-	#cta p { text-align: center; }
-	#cta h3 { margin-top: 0px; }
-	#cta .twitter-share-button { float: none; }
-}
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>A little bit about Aditya Sood</title>
 
-/* Bigger than mobile */
-@media (min-width: 768px) { 
+	<meta name="description" content="Aditya Sood, 18 year old student from Alpharetta High School is looking for an internship for the summer 2015.">
+	<meta name="keywords" content="internship, georgia, atlanta, alpharetta, aditya sood">
+	<meta name="author" content="Aditya Sood">
+	<meta name="copyright" content="© 2015, Aditya Sood. All rights reserved.">
+	<meta name="robots" content="index, follow">
+	
+	<link href="assets/favicon.png" rel="icon" type="image/png">
 
-	#skills .skilla { display: table; }
-	#skills .skilla [class*="col-"] {
-	    float: none;
-	    display: table-cell;
-	    vertical-align: top;
-	}
-	#skills .skilla .col-sm-7 { padding-top: 60px; }
-}
+	<!-- CSS assets -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/css/tooltip.css">
+	<link rel="stylesheet" href="assets/css/slider.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+ 
+	<!--[if lt IE 9]>
+	  <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Open Graph Tags -->
+	<meta property="og:title" content="A 18 year old student student is looking for an internship">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://www.adityasood.me/">
+	<meta property="og:image" content="http://www.hostmeinca.com/assets/img/fb-image.png">
+	<meta property="og:site_name" content="Take me as an Intern">
+
+	<!-- Google Analytics -->
+	<<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-62522561-1', 'auto');
+  ga('send', 'pageview');
+
+	</script>
+</head>
+<body>
+	<!--[if lt IE 7]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+
+    <!-- Facebook like button -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.3";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+	
+    <header>
+		<div class="container">
+			<div class="row meRow">
+				<div class="col-sm-7">
+					<strong><span>*</span>Hi</strong>
+					<p>My name is Aditya Sood. <br />
+                        I’m 18 years old. </p> <!-- student from <a href="https://youtu.be/7z3tFJzE6x8" target="_blank" title="Watch the video on YouTube">Atlanta</a>.</p> -->
+					</div>
+				<div class="col-sm-5 me">
+					<img src="assets/img/marek-dlugos.png" alt="Aditya Sood" />
+				</div>
+			</div>
+		</div>
+	</header>
+    
+
+	<main>
+        <div class="container">
+    		<div class="row">
+    			<div class="col-sm-12">
+    				<h1>I'm an aspiring <em class="tooltips dark">physician<span class="tooltip-content"><font color="red">Surgeon      .</font></span></em> and medical researcher. This summer I’d like to be your Intern (June - September)</h1>
+    			</div>
+    		</div>
+        </div>
+	</main>
+	  
+    <section id="subscribe">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-10 centered">-->
+                    <h7><font size="5"color="red"> I'm a 
+                        I don’t find myself defined by the work I’ve done. I define myself by the work I want to do. 
+I believe skills can be taught—personality is inherent. My personality is what separates me from others. Rather than getting awards, advancing status, or gaining accolades, I prefer to keep learning, continue challenging myself, and do interesting things that matter. </font>
+                    </h7>
+                </div>
+            </div>
+        </div>
+    </section>
+	<section id="skills">
+		<div class="container">
+			
+			<div class="row">
+				<h2>A little bit about me.</h2>
+			</div>
+			
+			<div class="row skilla">
+				<div class="col-sm-4">
+					<h3>Activism</h3>
+					<ul class="skills">
+						<li>
+							<span>Working Together for Change</span>
+							<strong>Executive Director</strong>
+						</li>
+						<li>
+							<span>United Way Regional Commission on Homelessness</span>
+							<strong>Board Member</strong>
+						</li>
+						<li>
+							<span>GivingPoint Institute</span>
+							<strong>Institute Leader</strong>
+						</li>
+						<li>
+							<span>Fulton County Global Youth Leadership</span>
+							<strong>Global Youth Ambassador</strong>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-1 hidden-xs curly">
+					<span>}</span>
+				</div>
+				<div class="col-sm-7">
+					<a href="http://workingtogetherforchange.com" target="_blank" class="btn github">
+						<i class="fa fa-github fa-2x"></i>
+						<span>Check out my work on</span>
+						<strong>Homelessness</strong>
+					</a>
+					<h4>My nonprofit work</h4>
+					<ul class="iCan">
+						<li>Impacted <strong>lives of over two thousand homeless</strong>.</li>
+						<li>People of all ages come to volunteer, including <strong>elementary, middle, high, college, and even graduate students, as well as adults. </strong>.</li>
+						<li>Raise <strong> awareness </strong> and provide <strong>short term relief</strong> through our <strong>Immersion Pillar <strong>.</li>
+						<li>Provide <strong> medical relief </strong> through our <strong>Medical Pillar </strong>.</li>
+						<li>Look for <strong> long term solutions to ending homelessness </strong> through our <strong>Social Entrepreneurship Pillar </strong>.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row skilla">
+				<div class="col-sm-4">
+					<h3>Medical Work </h3>
+					<ul class="skills">
+						<li><strong>SkinPath Solutions</strong></li>
+						<li><strong>Emory St. Joseph’s Hospital</strong></li>
+<li><strong>GSU Neuroplasticity Lab</strong></li>
+						<li><strong>UPenn Health System </strong></li>
+						
+					</ul>
+				</div>
+				<div class="col-sm-1 hidden-xs curly">
+                    <span>}</span>
+                </div>
+				<div class="col-sm-7">
+					<h4>Experienced with </h4>
+					<ul class="iCan">
+						<li>Clinical Research</li>
+						<li>Laboratory Research</li>
+						<li>Shadowing in clinic as well as in operating room.</li>
+						<li>Patient profile analysis and optimization.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row skilla">
+				<div class="col-sm-4">
+					<h3>Other Skills</h3>
+					<ul class="skills">
+						<li>
+							<strong>Presentation</strong>
+						
+						</li>
+						<li>
+							<strong>Marketing and Business Analysis</strong>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-1 hidden-xs curly">
+                    <span>}</span>
+                </div>
+				<div class="col-sm-7">
+					<h4>I can help you with</h4>
+					<ul class="iCan">
+						<li>Create <strong>project or business plans</strong>.</li>
+						<li>Strategic decision-making through quantitative analysis</li>
+						<li>Presentation creation or delivery.</li>
+						<li>Do interesting <strong>marketing for your brand</strong> on social media networks.</li>
+					
+					</ul>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-8 counter centered">
+					<p>There are still <strong id="countdown-holder"></strong> until summer, which gives me a lot of time to learn new skills that you might need!</p>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section id="bring">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-8 centered">
+					<h2>What can I bring to your team?</h2>
+					<ul style="position: relative;">
+						<li>Work on ideas you never had time to realize.</li>
+						<li>Radically improve the <em class="tooltips light">design<span class="tooltip-content">How things look like but mainly WORK.</span></em> of your project <strong>during my 4 months internship</strong>.</li>
+						<li>Bring <strong>new ideas</strong>. See things from a <strong>different point of view</strong>.</li>
+						<li>And finally - introduce you to Indian culture. For instance, did you know that shampoo was invented in India?”?</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="recommendations">
+		<div class="container">
+			<div class="row">
+				<h2>What people I’ve worked with are saying</h2>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 col-md-9 centered">
+					<ul>
+						<li>
+							<img src="assets/img/martin2.png" alt="Lana" />
+							<cite><strong>Dr. Lana Wachniak</strong>, Professor Emeritus at <a href=" http://www.unitedwayatlanta.org/story/lana-wachniak/" target="_blank" title="Visit Dr. Lana’s Pofile ">KSU </a> </cite>
+							<q> Aditya is able to invite others to share in his vision for change, and to make the vision a reality.  He listens, he collaborates, he seeks input and advice, and then he implements ideas with the assistance of others. He is fearless and innovative when it comes to utilizing and trying out new concepts and approaches in his volunteer activities.  </q>
+						</li>
+						<li>
+							<img src="assets/img/christina2.png" alt="Suzanne" />
+							<cite><strong>Suzanne Sawyer</strong>, Chief Marketing Officer at <a href="http://www.crudesign.pt" target="_blank" title="Visit site of CRU design">University of Pennsylvania Health System</a></cite>
+							<q>It was an absolute delight to have Aditya work on my team. Aditya jumped right into the internship, with a solid mix of independent work and collegial collaboration with seasoned team members. In one project, Aditya took a novel approachto a referral analysis, leveraging his knowledge of HTML and web scraping to quickly and efficiently gather physician data from online sources, which he then analyzed to discern referral behavior and patterns.</q>
+						</li>
+							
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+<!--
+	<section id="cv">
+		<div class="container">
+			<div class="row">
+				<h2>Want to learn more?</h2>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 col-md-5 centered">
+					<a href="cv/Marek-Dlugos-CV.pdf" target="_blank" class="btn">Download my Curriculum Vitae</a>
+					<span>(1.3MB, in PDF)</span>
+				</div>
+			</div>
+		</div>
+	</section> -->
+<!--
+	<section id="projects">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-6 centered">
+					<h2>Freetime projects</h2>
+
+                    <article id="slider">
+                            <!-- Slider Setup --><!--
+                        
+                            <input checked type="radio" name="slider" id="slide1" />
+                            <input type="radio" name="slider" id="slide2" />
+                            <input type="radio" name="slider" id="slide3" />
+                            <input type="radio" name="slider" id="slide4" />
+                            <input type="radio" name="slider" id="slide5" />
+                            <input type="radio" name="slider" id="slide6" />
+                            <input type="radio" name="slider" id="slide7" />
+                            <input type="radio" name="slider" id="slide8" />
+                        -->
+                            <!-- The Slider --><!--
+                            
+                            <div id="slides">
+                                <div id="overflow">
+                                    <div class="inner">
+                                        <article>
+                                            <h3>Wire Clothing</h3>
+                                            <img src="assets/img/projects/wire-clothing.png" alt="WIRE Clothing">
+                                            <p>I have created a label and collection of trendy clothes for our high school.</p>
+                                        </article>
+                                        <article>
+                                            <h3>VIDEBY</h3>
+                                            <img src="assets/img/projects/videby.png" alt="trakaka">
+                                            <p>Automatic collection, next visualization and management of electric energy consumption in buildings.</p>
+                                        </article>
+                                        <article>
+                                            <h3>Mobile app</h3>
+                                            <img src="assets/img/projects/mobile-app-spse.png" alt="Mobile app for SPSE">
+                                            <p>Mobile app with substitutions, timetables, news, magazine, school e-mail...</p>
+                                        </article>
+                                        <article>
+                                            <h3>Upload.it</h3>
+                                            <img src="assets/img/projects/upload-it.png" alt="Upload.it platform">
+                                            <p>App to make uploading and downloading exam results more easier.</p>
+                                        </article>
+                                        <article>
+                                            <h3>School site</h3>
+                                            <img src="assets/img/projects/school-site-spse.png" alt="SPSE school website">
+                                            <p>Redesign of my school’s website. Trendy, responsive and with the focus on UX.</p>
+                                        </article>
+                                        <article>
+                                            <h3>eStavebny Dennik</h3>
+                                            <img src="assets/img/projects/stavebny-dennik.png" alt="Elektronicky stavebny dennik">
+                                            <p>Co-Founded online streamlined booking system for builders. Made whole design and user interface.</p>
+                                        </article>
+                                        <article>
+                                            <h3>Ice Bucket Challenge</h3>
+                                            <img src="assets/img/projects/ibch.png" alt="Ice Bucket Challenge">
+                                            <p>Accepted famous Ice Bucket Challenge in my own way and get a big attention.</p>
+                                        </article>
+                                        <article>
+                                            <h3>Basketball tournament</h3>
+                                            <img src="assets/img/projects/basketball.png" alt="Basketball tournament">
+                                            <p>Organized basketball tournament in my hometown.</p>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        -->
+                            <!-- Controls and Active Slide Display --><!--
+                        
+                            <div id="controls">
+                     
+                                <label for="slide1"></label>
+                                <label for="slide2"></label>
+                                <label for="slide3"></label>
+                                <label for="slide4"></label>
+                                <label for="slide5"></label>
+                                <label for="slide6"></label>
+                                <label for="slide7"></label>
+                                <label for="slide8"></label>
+                            
+                            </div>
+                            
+                            <div id="active">
+                                <label for="slide1"></label>
+                                <label for="slide2"></label>
+                                <label for="slide3"></label>
+                                <label for="slide4"></label>
+                                <label for="slide5"></label>
+                                <label for="slide6"></label>
+                                <label for="slide7"></label>
+                                <label for="slide8"></label>
+                            </div>
+                    </article>
+				</div>
+			</div>
+		</div>
+	</section>
+-->
+	<section id="awards">
+		<div class="container">
+            <div class="row">
+                <h2>Honors &amp; awards</h2>
+            </div>
+            
+            
+			<div class="row">
+                <div class="col-xs-6 col-sm-2">
+					<img src="assets/img/second.png" alt="Second place" />
+					<h3><strong>2nd</strong> at <em class="tooltips dark">TyE <span class="tooltip-content">Global Youth Entrepreneur Competition.</span></em> 2011</h3>
+					<span>(design category)</span>
+                </div>
+                <div class="col-xs-6 col-sm-2">
+                    <img src="assets/img/second.png" alt="Second place" />
+                    <h3><strong>2nd</strong> at <em class="tooltips dark">FBLA<span class="tooltip-content">Nationalwide competition in business plan and presentation.</span></em></h3>
+                    <span>(design &amp; programming websites)</span>
+                </div>
+                <div class="col-xs-6 col-sm-2">
+                    <img src="assets/img/special-price.png" alt="Special price" />
+                    <h3><strong>Coke Scholar</strong></h3>
+                    <span>picked as <em class="tooltips dark"><span class="tooltip-content"> 150 out of 103,000.</span></em> 2015</span>
+                </div>
+                
+               <div class="col-xs-6 col-sm-2">
+                    <img src="assets/img/first.png" alt="20 under 20" />
+                    <h3><strong>20 Under 20 </strong> at <em class="tooltips dark">Georgia Youth Leadership<span class="tooltip-content">Program aimed at finding and exposing young students with potential.</span></em> 2015</h3>
+                    <span>(mobile app category)</span>
+                </div>
+                <div class="col-xs-6 col-sm-2">
+                    <img src="assets/img/special-price.png" alt="Scholar" />
+                    <h3><strong>Foundation Fellow</strong></h3>
+                    <span>at <em class="tooltips dark">University of Georgia<span class="tooltip-content">as one of 20 students on campus.</span></em> 2015</span>
+                </div>
+                <div class="col-xs-6 col-sm-2">
+                    <img src="assets/img/special-price.png" alt="Presidential Service Award" />
+                    <h3><strong>Presidential Service Award</strong></h3>
+                    <span>for community service and volunteering</span> -->
+                </div>
+			</div>
+		</div>
+	</section>
+
+	<section id="hobby">
+		<div class="container">
+			<div class="row">
+				<h2>Will I fit into your team?</h2>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<img src="assets/img/basketball.png" alt="Love to volunteer and help out" />
+					<h3>Passion for volunteerism</h3>
+				</div>
+				<div class="col-sm-4">
+					<img src="assets/img/travelling.png" alt="Love to travel" />
+					<h3>Love to travel</h3>
+				</div>
+				<div class="col-sm-4">
+					<img src="assets/img/photo.png" alt="Love to shoot photo &amp; video" />
+					<h3>Love to shoot photos &amp; video</h3>
+				</div>
+			</div>
+			<div class="row">
+				<p>*And I like to discover new hobbies too :-)</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="why">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-8 centered">
+					<h2>Why I want to intern?</h2>
+					<p>I've just graduated high school and will have three extra months till I begin college so I would love to fill that time by doing some awesome stuff with you!</p>
+                    <ul>
+                        <li>
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <span>2011-2015</span>
+                                 <!--   <a href="http://skoly.ineko.sk/rebricky/?r=2012&amp;ts=SO%C5%A0" target="_blank" class="rank">Ranked #1 <br> in Country</a> -->
+                                </div>
+                                <div class="col-sm-10">
+                                    <h3>Alpharetta High School</h3>
+                               <!--     <h4>Information and network technologies</h4>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <ul>
+                                                <li>Server Technologies</li>
+                                                <li>Software Technologies</li>
+                                                <li>Operating Systems (Win &amp; Linux)</li>
+                                                <li>Hardware architecture</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <ul>
+                                                <li>Network Technologies (Cisco CCNA)</li>
+                                                <li>Database Applications</li>
+                                                <li>Programming in C and Java</li>
+                                                <li>Electronics</li>
+                                            </ul>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                              <!-- <div class="col-sm-2">
+                                    <span>2015-2018</span>
+                                    <a href="http://www.topuniversities.com/university-rankings/world-university-rankings/2014" target="_blank" class="rank">Ranked #5 <br> in the World</a>
+                                </div>
+                                <div class="col-sm-10">
+                                    <h3>Got the offer from UCL and CVUT Prague. Help me <strong>gain more experience before my studies start</strong>.</h3> -->
+                                    <!--<div class="row"> 
+                                        <div class="col-sm-6">
+                                            <a href="http://www.ucl.ac.uk/" target="_blank">
+                                                <img src="assets/img/ucl.png" alt="University College London" />
+                                                <h4>University College London</h4>
+                                                <strong>Information Management for Business</strong>
+                                            </a>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <a href="http://www.cvut.cz/" target="_blank">
+                                                <img src="assets/img/cvut.png" alt="Czech Technical University" />
+                                                <h4>Czech Technical University</h4>
+                                                <strong>Software Engineering and Technologies</strong>
+                                            </a>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <section id="cta">
+        <div class="animated-bg">
+            <div class="content">
+                <div id="large">
+                    <canvas id="draw"></canvas>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-10 col-md-5 centered">
+                                <img src="assets/img/marek-dlugos-2.png" alt="Aditya Sood" class="me" />
+                                <ul class="social">
+                                    <li><a href="http://www.facebook.com/workingtogetherforchange" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
+                                    <li><a href="http://www.twitter.com/adityasood6" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+                                    <li><a href="http://www.instagr.am/workingtogetherforchange" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
+                                    <li><a href="http://www.youtube.com/workingtogetherforchange" target="_blank"><i class="fa fa-youtube fa-2x"></i></a></li>
+                                    <li><a href="skype:libra4po" target="_blank"><i class="fa fa-skype fa-2x"></i></a></li>
+                                </ul>
+                                <h3>Or just shoot me an e-mail to connect</h3>
+                                <a href="mailto:aditya.sood2@gmail.com?subject=Hey%20Aditya,%20This%20is%20your%20lucky%20day!" target="_blank" class="btn">
+                                   <span>Write me an e-mail</span>
+                                    <strong>aditya.sood2@gmail.com</strong>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6">
+                                <p class="left">I have done this site <strong>during one week, instead of studying for my economics exams and partying with my friends</strong>. I hope it's worth it! </p>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <p class="right">Or help me by sharing my dream on facebook or twitter.</p>
+                                <div class="fb-like" data-href="http://www.hostmeinca.com" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+                                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.workingtogetherforchange.com/" data-text="End homelessness! Support WTFC!" data-via="AdityaSood6" data-hashtags="NoHomeless">Tweet</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+<!-- 
+    <section id="subscribe">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-7 centered">
+                    <h2>Want to know how it goes?</h2>
+                    <h3>Subscribe to get updates</h3> -->
+                    <!-- Begin MailChimp Signup Form --> <!--
+                    <div id="mc_embed_signup">
+                        <form action="http://hostmeinca.us10.list-manage.com/subscribe/post?u=d58e3005b59d4aead5ce9f7a1&amp;id=a1de0684c4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        
+                            <div id="mc_embed_signup_scroll">
+
+                                <div id="mce-responses" class="clear">
+                                    <div class="response" id="mce-error-response" style="display:none"></div>
+                                    <div class="response" id="mce-success-response" style="display:none"></div>
+                                </div>
+                            
+                                <div class="mc-field-group">
+                                    <div class="row">
+                                        <div class="col-sm-8">
+                                            <input type="email" value="" name="EMAIL" placeholder="E-mail address" class="required email" id="mce-EMAIL">
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                                        </div>
+                                    </div>
+                                    <small><strong>*</strong>just occasional interesting brief updates</small>
+
+                                    <div style="position: absolute; left: -5000px;"><input type="text" name="b_d58e3005b59d4aead5ce9f7a1_a1de0684c4" tabindex="-1" value=""></div>
+                            
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <script type='text/javascript' src='http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script> -->
+                    <!--End mc_embed_signup-->
+               <!-- </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- JS assets -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    <script src="assets/js/countdown.min.js"></script>
+    <script src="assets/js/retina.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/TweenLite.min.js"></script>
+    <script src="assets/js/EasePack.min.js"></script>
+    <script src="assets/js/rAF.js"></script>
+    <script src="assets/js/animated-background.js"></script>
+</body>
+</html>
